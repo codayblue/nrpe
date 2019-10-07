@@ -5,7 +5,17 @@ This file is used to list changes made in each version of nrpe
 ## Unreleased
 
 - Remove windows references and use Chef defaults for `file` and `template` resources
-- Update checks for `node['platform_family']` to handle `amazon`
+- Suppport Amazon Linux on modern Chef Infra Client releases
+- Better check for systemd platforms
+- Require Chef Infra Client 14 or later
+- Don't rely on the build-essential cookbook now that build_essential resource is built-in
+- Resolve all the latest cookstyle warnings
+- Update .gitignore and chefignore files to newer versions
+- Move the test cookbook into an integration group in the Berksfile
+- Move the template files out of the templates/default directory and just put them in templates/
+- Remove the .foodcritic that was no longer needed as all rules pass
+- Remove the Gemfile that was used to install stove which is part of Chef DK and Workstation now
+- Add the latest platforms the kitchen configs
 
 ## 2.0.5 (2018-12-14)
 
