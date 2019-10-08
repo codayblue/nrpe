@@ -16,6 +16,8 @@ This file is used to list changes made in each version of nrpe
 - Remove the .foodcritic that was no longer needed as all rules pass
 - Remove the Gemfile that was used to install stove which is part of Chef DK and Workstation now
 - Add the latest platforms the kitchen configs
+- Update checks for `node['platform_family']` to handle `amazon`
+- Respect NRPE version attribute
 
 ## 2.0.5 (2018-12-14)
 
